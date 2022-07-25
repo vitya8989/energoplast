@@ -66,6 +66,7 @@
   position: absolute;
   border: 1px dashed #D90202;
   height: 350px;
+  transition: 0.4s;
   top: 0;
   @media ($tablet2) {
     height: 235px;
@@ -338,7 +339,6 @@
   right: 25px;
   width: 20px;
   height: 20px;
-  transition: 0.3s;
 
   &::before,
   &::after {

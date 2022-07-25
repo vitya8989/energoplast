@@ -1086,6 +1086,9 @@ img {
   position: absolute;
   border: 1px dashed #D90202;
   height: 350px;
+  -webkit-transition: 0.4s;
+  -o-transition: 0.4s;
+  transition: 0.4s;
   top: 0;
 }
 
@@ -1324,9 +1327,6 @@ img {
   right: 25px;
   width: 20px;
   height: 20px;
-  -webkit-transition: 0.3s;
-  -o-transition: 0.3s;
-  transition: 0.3s;
 }
 
 .project_slider-2307__slide_accordion_arrow::before,
@@ -1789,14 +1789,21 @@ img {
 }
 
 .numbers-2307__item_number {
-  display: inline-block;
-  font-weight: 700;
-  font-size: 55px;
-  line-height: 55px;
-  background: -o-linear-gradient(356.75deg, #D90202 -6.8%, #F49300 95.92%);
-  background: linear-gradient(93.25deg, #D90202 -6.8%, #F49300 95.92%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  width: 65px;
+  height: 55px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.numbers-2307__item_number img {
+  max-width: 100%;
+  max-height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .numbers-2307__item_title {
@@ -3148,8 +3155,8 @@ img {
   }
 
   .numbers-2307__item_number {
-    font-size: 40px;
-    line-height: 40px;
+    width: 47px;
+    height: 30px;
   }
 
   .catalog-2307__title {
@@ -3418,12 +3425,12 @@ img {
   }
 
   .numbers-2307__item_number {
-    font-size: 30px;
-    line-height: 30px;
+    width: 35px;
+    height: 25px;
   }
 
   .numbers-2307__item_title {
-    margin-top: 0;
+    margin-top: 5px;
     font-size: 18px;
     line-height: 28px;
   }
