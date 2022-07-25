@@ -1848,6 +1848,7 @@ img {
   -webkit-transition: 0.25s;
   -o-transition: 0.25s;
   transition: 0.25s;
+  position: relative;
 }
 
 .catalog-2307__item:first-child {
@@ -2480,7 +2481,11 @@ img {
 
   .catalog-2307__item:hover .catalog-2307__item_title {
     color: #D90202;
-    text-shadow: 0 0 1px #D90202;
+  }
+
+  .catalog-2307__item:hover .services-2307__link_arrow {
+    opacity: 1;
+    visibility: visible;
   }
 
   .company_slider-2307__slider_slide_content:hover .company_slider-2307__slider_slide_bottom {
@@ -2900,6 +2905,10 @@ img {
 
   .numbers-2307__item_text {
     margin-top: 0;
+  }
+
+  .catalog-2307__item .services-2307__link_arrow {
+    display: none;
   }
 }
 
@@ -3708,6 +3717,7 @@ img {
   }
 
   .contacts-2307__map {
+    height: 355px;
     margin-left: -15px;
     margin-right: -15px;
   }
