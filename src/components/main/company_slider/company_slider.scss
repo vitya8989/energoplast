@@ -1,0 +1,223 @@
+.company_slider-2307 {
+  overflow: hidden;
+  background: #FDFDFD;
+}
+.company_slider-2307__title {
+  text-align: center;
+  font-weight: 400;
+  font-size: 45px;
+  line-height: 53px;
+  @media($tablet2) {
+    font-size: 32px;
+    line-height: 40px;
+  }
+  @media($tablet3) {
+    font-size: 24px;
+    line-height: 36px;
+  }
+}
+.company_slider-2307__slider {
+  padding: 91px 0 55px;
+  position: relative;
+  @media ($tablet2) {
+    padding: 20px 0 40px;
+  }
+}
+.company_slider-2307__slider_slide.swiper-slide {
+  width: 480px;
+  @media ($desktopBig) {
+    width: 400px;
+  }
+  @media ($desktop) {
+    width: 320px;
+  }
+}
+.company_slider-2307__slider_slide_content {
+  width: 100%;
+  padding-top: 135.41%;
+  position: relative;
+  border-radius: 5px;
+  overflow: hidden;
+  display: block;
+  img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  &:hover {
+    @media($tabletMax) {
+      .company_slider-2307__slider_slide_bottom {
+        transform: translateY(0);
+        opacity: 1;
+        visibility: visible;
+      }
+    }
+  }
+}
+.company_slider-2307__slider_slide_bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+  width: 100%;
+  padding: 18px 50px 20px 30px;
+  background: #D90202;
+  transition: 0.4s;
+  @media ($tabletMax) {
+    transform: translateY(120%);
+    opacity: 0;
+    visibility: hidden;
+  }
+  @media ($tablet2) {
+    padding: 15px 40px 15px 15px;
+  }
+}
+.company_slider-2307__slider_slide_name {
+  font-size: 22px;
+  line-height: 30px;
+  color: #FDFDFD;
+  @media ($desktop) {
+    font-size: 18px;
+    line-height: 28px;
+  }
+}
+.company_slider-2307__slider_slide_city {
+  font-size: 16px;
+  line-height: 28px;
+  color: #FDFDFD;
+  margin-top: 5px;
+  @media ($desktop) {
+    font-size: 14px;
+    line-height: 22px;
+  }
+}
+.company_slider-2307__slider_slide_arrow {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 30px;
+  height: 30px;
+
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    left: 5px;
+    width: 15px;
+    height: 2px;
+    background: #D7D7F1;
+  }
+  &::before {
+    transform: rotate(45deg);
+    top: 8px;
+  }
+  &::after {
+    transform: rotate(-45deg);
+    bottom: 9px;
+  }
+}
+.company_slider-2307__pagination.swiper-pagination-bullets.swiper-pagination-horizontal {
+  position: absolute;
+  bottom: 0;
+  z-index: 5;
+  text-align: center;
+  @media ($tablet2) {
+    display: none;
+  }
+
+  .swiper-pagination-bullet {
+    opacity: 1;
+    position: relative;
+    margin: 0 10px;
+    width: 6px;
+    height: 6px;
+    background: #D7D7F1;
+  }
+
+  .swiper-pagination-bullet.swiper-pagination-bullet-active {
+    background: #D90202;
+    box-shadow: 0 0 0 2px #D90202;
+    &::after {
+      content: '';
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      left: -7px;
+      top: -7px;
+      background: rgba(217, 2, 2, 0.3);;
+    }
+  }
+}
+.company_slider-2307__arrows {
+  position: absolute;
+  right: 0;
+  top: 22px;
+  display: flex;
+  justify-content: space-between;
+  width: 124px;
+  @media ($tablet2) {
+    display: none;
+  }
+}
+.company_slider-2307__btn-prev,
+.company_slider-2307__btn-next {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  border: 2px solid #2E3538;
+  position: relative;
+  cursor: pointer;
+  transition: 0.25s;
+  &::after,
+  &::before {
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 2px;
+    background: #2E3538;
+    left: 17px;
+    transition: 0.25s;
+  }
+  &::after {
+    transform: rotate(45deg);
+    top: 17.5px;
+  }
+  &::before {
+    transform: rotate(-45deg);
+    bottom: 17.5px;
+  }
+  &.swiper-button-disabled {
+    border: 2px solid #8D8787;
+    &::after,
+    &::before {
+      background: #8D8787;
+    }
+    &:hover {
+      @media($tablet2Max) {
+        border: 2px solid #8D8787;
+        &::after,
+        &::before {
+          background: #8D8787;
+        }
+      }
+    }
+  }
+  &:hover {
+    @media ($tablet2Max) {
+      border: 2px solid #D90202;
+      &::after,
+      &::before {
+        background: #D90202;
+      }
+    }
+  }
+}
+.company_slider-2307__btn-prev {
+  transform: rotate(180deg);
+}

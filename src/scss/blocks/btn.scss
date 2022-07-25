@@ -1,0 +1,57 @@
+.btn {
+  background: #FFA113;
+  border-radius: 3px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #0F1011;
+  font-weight: 600;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: 0.25s;
+
+  &:hover {
+    @media ($tabletMax) {
+      background: #EC8E00;
+    }
+  }
+  &:active {
+    background: #EC8E00;
+    color: #055FB3;
+  }
+
+  &.this--transparent_blue {
+    background: transparent;
+    border: 2px solid #055FB3;
+    color: #055FB3;
+
+    &:hover {
+      @media ($tabletMax) {
+        color: #ffffff;
+        background: #055FB3;
+      }
+    }
+    &:active {
+      color: #FFA113!important;
+      background: #2779C6!important;
+      border: 2px solid #2779C6!important;
+    }
+  }
+  &.this--transparent_wh {
+    background: transparent;
+    border: 2px solid #FFFFFF;
+    color: #FFFFFF;
+
+    &:hover {
+      @media ($tabletMax) {
+        color: #055FB3;
+        background: #FFFFFF;
+      }
+    }
+    &:active {
+      color: #0F1011!important;
+      background: #ffffff!important;
+    }
+  }
+}

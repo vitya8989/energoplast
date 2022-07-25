@@ -1,0 +1,85 @@
+@import "null";
+@import "variables";
+
+@mixin font($font_name, $file_name, $weight, $style) {
+	@font-face {
+		font-family: $font_name;
+		font-display: swap;
+		src: url("../fonts/#{$file_name}.woff") format("woff"), url("../fonts/#{$file_name}.woff2") format("woff2");
+		font-weight: #{$weight};
+		font-style: #{$style};
+	}
+}
+
+@import "fonts";
+
+.body-2307 {
+	font-size: 16px;
+	line-height: 1.62;
+	font-family: Rubik, sans-serif;
+	font-weight: 400;
+	color: #2E3538;
+
+	&.scroll-lock {
+		overflow: hidden;
+	}
+}
+.wrapper-2307 {
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+}
+
+.container-2307 {
+	max-width: 1760px;
+	padding: 0 20px;
+	margin: 0 auto;
+
+	@media($tablet2) {
+		padding: 0 15px;
+	}
+}
+.section-2307 {
+	padding: 80px 0;
+	&.this--top {
+		padding: 80px 0 0 0;
+		@media ($tablet2) {
+			padding: 40px 0 0 0;
+		}
+	}
+	&.this--bottom {
+		padding: 0 0 80px 0;
+		@media ($tablet2) {
+			padding: 0 0 40px 0;
+		}
+	}
+
+	@media ($tablet2) {
+		padding: 40px 0;
+	}
+}
+.main-2307 {
+	flex: 1 0 auto;
+}
+
+@import "./blocks/title";
+@import "./blocks/btn";
+@import "./blocks/img_text";
+
+@import "../components/header/header";
+@import "../components/footer/footer";
+
+@import "../components/main/top/top";
+@import "../components/main/project_slider/project_slider";
+@import "../components/main/form/form";
+@import "../components/main/services/services";
+@import "../components/main/special_slider/special_slider";
+@import "../components/main/numbers/numbers";
+@import "../components/main/catalog/catalog";
+@import "../components/main/help/help";
+@import "../components/main/company_slider/company_slider";
+@import "../components/main/partners/partners";
+@import "../components/main/about/about";
+@import "../components/main/contacts/contacts";
+
+
