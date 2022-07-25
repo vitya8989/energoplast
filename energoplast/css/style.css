@@ -1353,7 +1353,7 @@ img {
   -webkit-transform: rotate(-45deg);
       -ms-transform: rotate(-45deg);
           transform: rotate(-45deg);
-  right: 1px;
+  right: 0;
 }
 
 .project_slider-2307__slide_accordion_body {
