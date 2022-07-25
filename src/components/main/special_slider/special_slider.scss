@@ -57,7 +57,7 @@
         background: rgba(255, 255, 255, 0.3);
       }
     }
-    @media ($tabletMax) {
+    @media ($tablet2Max) {
       &::after {
         content: '';
         width: 100%;

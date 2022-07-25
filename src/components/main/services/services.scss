@@ -115,6 +115,7 @@
   font-size: 22px;
   line-height: 30px;
   transition: 0.25s;
+  color: #2E3538;
   @media ($mobile) {
     font-size: 18px;
     line-height: 28px;
@@ -170,21 +171,21 @@
     width: 13px;
     height: 2px;
     background: #D90202;
-    left: 15px;
+    left: 12px;
     @media ($mobile) {
       background: #8D8787;
     }
   }
   &::after {
     transform: rotate(45deg);
-    top: 12px;
+    top: 13px;
     @media ($mobile) {
-      top: 14px;
+      top: 15px;
     }
   }
   &::before {
     transform: rotate(-45deg);
-    bottom: 12px;
+    bottom: 13px;
     @media ($mobile) {
       bottom: 15px;
     }

@@ -55,9 +55,9 @@ header2307SearchBtn.onclick = function () {
     header2307Search.classList.toggle('show');
     header2307SearchBtn.classList.toggle('active');
     if (header2307Search.classList.contains('show')) {
-        header2307.style.height = `${header2307.clientHeight + 100}px`;
+        header2307.style.paddingBottom = '100px';
     } else {
-        header2307.style.height = 'auto';
+        header2307.style.paddingBottom = '0';
     }
 }
 const callbackBtn2307 = document.querySelectorAll('.callback_btn-2307');

@@ -293,9 +293,9 @@ img {
   width: 100%;
   z-index: 100;
   background: #2E3538;
-  -webkit-transition: height 0.2s, background 0.4s;
-  -o-transition: height 0.2s, background 0.4s;
-  transition: height 0.2s, background 0.4s;
+  -webkit-transition: padding-bottom 0.2s, background 0.4s;
+  -o-transition: padding-bottom 0.2s, background 0.4s;
+  transition: padding-bottom 0.2s, background 0.4s;
 }
 
 .header-2307.this--transparent {
@@ -1647,6 +1647,7 @@ img {
   -webkit-transition: 0.25s;
   -o-transition: 0.25s;
   transition: 0.25s;
+  color: #2E3538;
 }
 
 .services-2307__link_list {
@@ -1688,21 +1689,21 @@ img {
   width: 13px;
   height: 2px;
   background: #D90202;
-  left: 15px;
+  left: 12px;
 }
 
 .services-2307__link_arrow::after {
   -webkit-transform: rotate(45deg);
       -ms-transform: rotate(45deg);
           transform: rotate(45deg);
-  top: 12px;
+  top: 13px;
 }
 
 .services-2307__link_arrow::before {
   -webkit-transform: rotate(-45deg);
       -ms-transform: rotate(-45deg);
           transform: rotate(-45deg);
-  bottom: 12px;
+  bottom: 13px;
 }
 
 .special_slider-2307 {
@@ -1860,6 +1861,7 @@ img {
   -webkit-transition: 0.25s;
   -o-transition: 0.25s;
   transition: 0.25s;
+  color: #2E3538;
 }
 
 .help-2307 {
@@ -2329,6 +2331,13 @@ img {
     visibility: visible;
   }
 
+  .special_slider-2307__pagination.swiper-pagination-bullets.swiper-pagination-horizontal .swiper-pagination-bullet.swiper-pagination-bullet-active::after {
+    content: '';
+    width: 100%;
+    -webkit-animation: line 7s linear;
+            animation: line 7s linear;
+  }
+
   .company_slider-2307__btn-prev.swiper-button-disabled:hover,
   .company_slider-2307__btn-next.swiper-button-disabled:hover {
     border: 2px solid #8D8787;
@@ -2455,13 +2464,6 @@ img {
 
   .footer-2307__bottom_link:hover {
     color: #FDFDFD;
-  }
-
-  .special_slider-2307__pagination.swiper-pagination-bullets.swiper-pagination-horizontal .swiper-pagination-bullet.swiper-pagination-bullet-active::after {
-    content: '';
-    width: 100%;
-    -webkit-animation: line 7s linear;
-            animation: line 7s linear;
   }
 
   .catalog-2307__item:hover {
@@ -3608,7 +3610,7 @@ img {
   }
 
   .services-2307__link_arrow::after {
-    top: 14px;
+    top: 15px;
   }
 
   .services-2307__link_arrow::before {

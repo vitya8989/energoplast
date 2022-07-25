@@ -1,4 +1,4 @@
-new Swiper('.company_slider-2307__slider', {
+const companySlider2307 = new Swiper('.company_slider-2307__slider', {
     speed: 700,
     slidesPerView: 'auto',
     spaceBetween: 10,

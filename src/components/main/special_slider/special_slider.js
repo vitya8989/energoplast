@@ -8,6 +8,7 @@ new Swiper('.special_slider-2307__slider', {
     autoplay: {
         delay: 6850,
     },
+    loop: true,
 });
 
 
