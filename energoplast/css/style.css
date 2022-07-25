@@ -2017,7 +2017,7 @@ img {
   -webkit-transform: rotate(45deg);
       -ms-transform: rotate(45deg);
           transform: rotate(45deg);
-  top: 8px;
+  top: 9px;
 }
 
 .company_slider-2307__slider_slide_arrow::after {
@@ -2106,7 +2106,7 @@ img {
   -webkit-transform: rotate(45deg);
       -ms-transform: rotate(45deg);
           transform: rotate(45deg);
-  top: 17.5px;
+  top: 18px;
 }
 
 .company_slider-2307__btn-prev::before,
@@ -2114,7 +2114,7 @@ img {
   -webkit-transform: rotate(-45deg);
       -ms-transform: rotate(-45deg);
           transform: rotate(-45deg);
-  bottom: 17.5px;
+  bottom: 18px;
 }
 
 .company_slider-2307__btn-prev.swiper-button-disabled,
