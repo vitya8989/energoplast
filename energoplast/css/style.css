@@ -1460,6 +1460,10 @@ img {
   color: #FFE000;
 }
 
+.form-2307__form_tel {
+  color: rgba(242, 242, 242, 0.5);
+}
+
 .form-2307__form_input::-webkit-input-placeholder {
   color: rgba(242, 242, 242, 0.5);
 }

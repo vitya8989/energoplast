@@ -235,6 +235,13 @@ const form2307Content = document.querySelector('.form-2307__content');
 const form2307Thanks = document.querySelector('.form-2307__thanks');
 const form2307ThanksBtn = document.querySelector('.form-2307__thanks_btn');
 const form2307FormInput = document.querySelectorAll('.form-2307__form_input');
+const form2307formTel = document.querySelectorAll('.form-2307__form_tel');
+
+for (let i = 0; i < form2307formTel.length; i++) {
+    form2307formTel[i].addEventListener('input', function () {
+        form2307formTel[i].style.color = '#FDFDFD';
+    });
+}
 
 function setCursorPosition(pos, elem) {
     elem.focus();
