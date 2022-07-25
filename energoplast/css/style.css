@@ -3173,11 +3173,11 @@ img {
   }
 
   .catalog-2307__item:nth-child(2) {
-    background: url("../img/main/catalog/2_mob.jpg") center/contain no-repeat;
+    background: url("../img/main/catalog/3_mob.jpg") center/contain no-repeat;
   }
 
   .catalog-2307__item:nth-child(3) {
-    background: url("../img/main/catalog/3_mob.jpg") center/contain no-repeat;
+    background: url("../img/main/catalog/2_mob.jpg") center/contain no-repeat;
   }
 
   .catalog-2307__item_title {
@@ -3766,12 +3766,12 @@ img {
 
 @media (max-width: 959.9px){
 
-  .webp .catalog-2307__item:nth-child(2){ background: url(../img/main/catalog/2_mob.webp) center/contain no-repeat; }
+  .webp .catalog-2307__item:nth-child(2){ background: url(../img/main/catalog/3_mob.webp) center/contain no-repeat; }
 }
 
 @media (max-width: 959.9px){
 
-  .webp .catalog-2307__item:nth-child(3){ background: url(../img/main/catalog/3_mob.webp) center/contain no-repeat; }
+  .webp .catalog-2307__item:nth-child(3){ background: url(../img/main/catalog/2_mob.webp) center/contain no-repeat; }
 }
 
 @media (max-width: 639.9px){
