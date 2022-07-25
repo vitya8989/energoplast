@@ -59,6 +59,7 @@ function validate_form(form) {
     if (form.querySelector('.form-2307__form_tel').value.indexOf('_') !== -1) {
         valid = false;
         form.querySelector('.form-2307__form_tel').classList.add('error');
+        form.querySelector('.form-2307__form_tel').style.color = '#FFE000';
     }
     if (form.querySelector('.form-2307__form_name').value === "") {
         valid = false;
@@ -80,6 +81,7 @@ for (let i = 0; i < form2307FormInput.length; i++) {
     form2307FormInput[i].onfocus = function () {
         if (form2307FormInput[i].classList.contains('error')) {
             form2307FormInput[i].classList.remove('error');
+            form2307FormInput[i].style.color = '#FDFDFD';
         }
     }
 }
