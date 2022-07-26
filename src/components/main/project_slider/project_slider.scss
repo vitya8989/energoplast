@@ -54,6 +54,7 @@
   @media ($tablet2) {
     width: 1190px;
     height: 243px;
+    z-index: 2;
   }
 
   img {
@@ -69,7 +70,13 @@
   transition: 0.4s;
   top: 0;
   @media ($tablet2) {
-    height: 235px;
+    height: 142px;
+    border: none;
+    background: #D7D7F1;
+    border-radius: 5px;
+    top: auto;
+    bottom: 85px;
+    z-index: 1;
   }
 }
 .project_slider-2307__border_1 {
@@ -97,8 +104,8 @@
     visibility: visible;
   }
   @media ($tablet2) {
-    width: 141px;
-    left: 75px;
+    width: 115px;
+    left: 95px;
   }
 }
 .project_slider-2307__border_3 {
@@ -112,8 +119,8 @@
     visibility: visible;
   }
   @media ($tablet2) {
-    width: 66px;
-    left: 239px;
+    width: 100px;
+    left: 215px;
   }
 }
 .project_slider-2307__border_4 {
@@ -127,8 +134,8 @@
     visibility: visible;
   }
   @media ($tablet2) {
-    width: 133px;
-    left: 299px;
+    width: 114px;
+    left: 320px;
   }
 }
 .project_slider-2307__border_5 {
@@ -142,8 +149,8 @@
     visibility: visible;
   }
   @media ($tablet2) {
-    width: 290px;
-    left: 436px;
+    width: 286px;
+    left: 439px;
   }
 }
 .project_slider-2307__border_6 {
@@ -157,8 +164,8 @@
     visibility: visible;
   }
   @media ($tablet2) {
-    width: 184px;
-    left: 731px;
+    width: 203px;
+    left: 730px;
   }
 }
 .project_slider-2307__border_7 {
@@ -172,8 +179,8 @@
     visibility: visible;
   }
   @media ($tablet2) {
-    width: 212px;
-    left: 946px;
+    width: 220px;
+    left: 938px;
   }
 }
 .project_slider-2307__slider {
@@ -191,6 +198,11 @@
   text-align: center;
   display: flex;
   justify-content: space-between;
+  @media ($tablet2) {
+    margin-left: -5px;
+    bottom: 57px;
+    justify-content: flex-start;
+  }
 
   .swiper-pagination-bullet {
     padding: 20px 0;
@@ -202,7 +214,7 @@
     background: transparent;
     margin: 0;
     @media ($tablet2) {
-      width: 150px;
+      margin-left: 5px;
     }
 
     &::after {
@@ -226,7 +238,8 @@
       @media ($tablet2) {
         font-size: 14px;
         line-height: 22px;
-        top: -12px;
+        top: 30px;
+        white-space: normal;
       }
     }
   }
@@ -239,28 +252,58 @@
       color: #D90202;
     }
   }
-
+  .swiper-pagination-bullet:first-child {
+    @media ($tablet2) {
+      width: 90px;
+    }
+  }
   .swiper-pagination-bullet:first-child::before {
     content: 'Экструдер';
   }
-
+  .swiper-pagination-bullet:nth-child(2) {
+    @media ($tablet2) {
+      width: 115px;
+    }
+  }
   .swiper-pagination-bullet:nth-child(2)::before {
     content: 'Шкаф управления';
   }
-
+  .swiper-pagination-bullet:nth-child(3) {
+    @media ($tablet2) {
+      width: 100px;
+    }
+  }
   .swiper-pagination-bullet:nth-child(3)::before {
     content: 'Формирующая голова';
+  }
+  .swiper-pagination-bullet:nth-child(4) {
+    @media ($tablet2) {
+      width: 114px;
+    }
   }
   .swiper-pagination-bullet:nth-child(4)::before {
     content: 'Вакуумная ванна';
   }
-
+  .swiper-pagination-bullet:nth-child(5) {
+    @media ($tablet2) {
+      width: 286px;
+    }
+  }
   .swiper-pagination-bullet:nth-child(5)::before {
     content: 'Ванна охлаждения';
   }
-
+  .swiper-pagination-bullet:nth-child(6) {
+    @media ($tablet2) {
+      width: 203px;
+    }
+  }
   .swiper-pagination-bullet:nth-child(6)::before {
     content: 'Тянущее устройство';
+  }
+  .swiper-pagination-bullet:nth-child(7) {
+    @media ($tablet2) {
+      width: 220px;
+    }
   }
   .swiper-pagination-bullet:nth-child(7)::before {
     content: 'Отрезное устройство';
@@ -352,7 +395,7 @@
   padding-right: 70px;
   padding-left: 25px;
   overflow: hidden;
-  transition: 0.4s;
+  transition: 0.3s;
   max-height: 0;
 
   p {
