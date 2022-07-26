@@ -13,6 +13,13 @@ for (let i = 0; i < form2307formTel.length; i++) {
         form2307formTel[i].style.color = '#FDFDFD';
     });
 }
+for (let i = 0; i < form2307formTel.length; i++) {
+    form2307formTel[i].addEventListener('blur', function () {
+        if (form2307formTel[i].value === '+_ (___) ___-__-__') {
+            form2307formTel[i].style.color = 'rgba(242, 242, 242, 0.5)';
+        }
+    });
+}
 
 function setCursorPosition(pos, elem) {
     elem.focus();

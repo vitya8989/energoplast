@@ -103,6 +103,15 @@ for (let i = 0; i < form2307popupClose.length; i++) {
     form2307popupClose[i].onclick = function () {
         callbackPopup2307.classList.remove('show-popup');
         form2307popup.reset();
+        for (let i = 0; i < form2307FormInput.length; i++) {
+            if (form2307FormInput[i].classList.contains('error')) {
+                form2307FormInput[i].classList.remove('error');
+                form2307FormInput[i].style.color = '#FDFDFD';
+            }
+        }
+        for (let i = 0; i < form2307formTel.length; i++) {
+            form2307formTel[i].style.color = 'rgba(242, 242, 242, 0.5)';
+        }
         setTimeout(function () {
             form2307popupAsk.classList.remove('hide');
             form2307popupAnswer.classList.add('hide');
@@ -115,6 +124,15 @@ callbackPopup2307.onclick = function (e) {
     if (!e.target.closest('.header-2307__callback-popup_body')) {
         callbackPopup2307.classList.remove('show-popup');
         form2307popup.reset();
+        for (let i = 0; i < form2307FormInput.length; i++) {
+            if (form2307FormInput[i].classList.contains('error')) {
+                form2307FormInput[i].classList.remove('error');
+                form2307FormInput[i].style.color = '#FDFDFD';
+            }
+        }
+        for (let i = 0; i < form2307formTel.length; i++) {
+            form2307formTel[i].style.color = 'rgba(242, 242, 242, 0.5)';
+        }
         setTimeout(function () {
             form2307popupAsk.classList.remove('hide');
             form2307popupAnswer.classList.add('hide');
@@ -240,6 +258,13 @@ const form2307formTel = document.querySelectorAll('.form-2307__form_tel');
 for (let i = 0; i < form2307formTel.length; i++) {
     form2307formTel[i].addEventListener('input', function () {
         form2307formTel[i].style.color = '#FDFDFD';
+    });
+}
+for (let i = 0; i < form2307formTel.length; i++) {
+    form2307formTel[i].addEventListener('blur', function () {
+        if (form2307formTel[i].value === '+_ (___) ___-__-__') {
+            form2307formTel[i].style.color = 'rgba(242, 242, 242, 0.5)';
+        }
     });
 }
 
