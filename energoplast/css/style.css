@@ -1073,7 +1073,6 @@ img {
   width: 1720px;
   height: 351px;
   position: relative;
-  z-index: 2;
 }
 
 .project_slider-2307__img img {
@@ -1085,14 +1084,13 @@ img {
 
 .project_slider-2307__border {
   position: absolute;
-  background: #D7D7F1;
+  border: 1px dashed #D90202;
   border-radius: 5px;
   height: 350px;
   -webkit-transition: 0.4s;
   -o-transition: 0.4s;
   transition: 0.4s;
   top: 0;
-  z-index: 1;
 }
 
 .project_slider-2307__border_1 {
@@ -3018,7 +3016,7 @@ img {
   }
 
   .project_slider-2307__border {
-    height: 142px;
+    height: 235px;
     top: auto;
     bottom: 85px;
   }

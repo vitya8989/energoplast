@@ -220,7 +220,7 @@ function headerTabletChange959(e) {
                 projectSlider2307Border[i].classList.remove('active');
             }
             projectSlider2307Border[projectSlider2307.activeIndex].classList.add('active');
-            
+
             if (projectSlider2307.activeIndex < 5) {
                 projectSlider2307Top.scrollLeft -= 248;
             }
