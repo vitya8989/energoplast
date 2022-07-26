@@ -211,10 +211,7 @@ function headerTabletChange959(e) {
                 projectSlider2307Border[i].classList.remove('active');
             }
             projectSlider2307Border[projectSlider2307.activeIndex].classList.add('active');
-            if (projectSlider2307.activeIndex === 1) {
-                projectSlider2307Top.scrollLeft += 180;
-            }
-            if (projectSlider2307.activeIndex > 1) {
+            if (projectSlider2307.activeIndex > 2) {
                 projectSlider2307Top.scrollLeft += 248;
             }
         });
@@ -223,9 +220,7 @@ function headerTabletChange959(e) {
                 projectSlider2307Border[i].classList.remove('active');
             }
             projectSlider2307Border[projectSlider2307.activeIndex].classList.add('active');
-            if (projectSlider2307.activeIndex === 5) {
-                projectSlider2307Top.scrollLeft -= 180;
-            }
+            
             if (projectSlider2307.activeIndex < 5) {
                 projectSlider2307Top.scrollLeft -= 248;
             }

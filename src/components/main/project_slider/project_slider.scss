@@ -51,10 +51,10 @@
   width: 1720px;
   height: 351px;
   position: relative;
+  z-index: 2;
   @media ($tablet2) {
     width: 1190px;
     height: 243px;
-    z-index: 2;
   }
 
   img {
@@ -65,18 +65,16 @@
 }
 .project_slider-2307__border {
   position: absolute;
-  border: 1px dashed #D90202;
+  background: #D7D7F1;
+  border-radius: 5px;
   height: 350px;
   transition: 0.4s;
   top: 0;
+  z-index: 1;
   @media ($tablet2) {
     height: 142px;
-    border: none;
-    background: #D7D7F1;
-    border-radius: 5px;
     top: auto;
     bottom: 85px;
-    z-index: 1;
   }
 }
 .project_slider-2307__border_1 {
